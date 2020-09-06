@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    
+    <form action="/action_page.php">
+        <h1>Đăng Ký</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"  pattern="[A-Za-z]{8}" title="Nhập chưa đúng"><br><br>
+        <label for="email">Email:</label>
+        <input type="Email" id="email" name="email" ><br><br>
+        <label for="pw">Password:</label>
+        <input type="password" id="pw"><br><br>
+        <label for="address">Address:</label>
+        <select>
+            <option value="HN">Hà Nội</option>
+            <option value="SG">Sài Gòn</option>
+            <option value="DN">Đà Nẵng</option>
+        </select><br><br>
+        <label for="Avatar">Avatar :</label>
+        <input type="file" id="avatar"><br><br>
+        <input type="radio" id="Nam" name="gender" value="Nam">
+        <label for="male">Nam</label>
+        <input type="radio" id="Nu" name="gender" value="Nu">
+        <label for="female">Nữ</label><br><br>
+        
+        <input type="checkbox" id="dieukhoan" name="dieukhoan" value="Điều khoản">
+        <label for="dieukhoan"> Điều khoản</label><br><br>
+
+        <input type="submit" value="Sign up">
+        <input type="reset"  value="Reset">
+    </form> 
+</body>
+</html>
